@@ -1,0 +1,22 @@
+.AsideContainer {
+    z-index: 2;
+    box-shadow: 13px 5px 15px rgba(29, 27, 27, 0.582);
+    width: 33rem;
+    height: 38.25rem;
+    border-radius: 10px;
+
+    img {
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    .AsideContainer {
+        display: none;
+        img {
+            border: 3px solid red;
+        }
+    }
+}

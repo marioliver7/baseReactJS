@@ -1,0 +1,12 @@
+.ImageAsideContainer {
+    grid-area: imageAside;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 26rem;
+        height: 19rem;
+    }
+}

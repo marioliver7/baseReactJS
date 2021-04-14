@@ -1,0 +1,115 @@
+$blue-color: rgb(72, 72, 184);
+$blue-dark-color: rgb(40, 40, 119);
+
+
+.FormLoginContainer {
+    border: none;
+    border-radius: 10px;
+
+    width: 28rem;
+    height: 33.25rem;
+
+    background-color: rgb(232, 235, 255);
+    margin-left: -1.25rem;
+    z-index: 1;
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            // border: none;
+            height: 70%;
+            width: 70%;
+            margin-left: 1.25rem;
+
+            legend {
+                text-align: center;
+                color: rgb(77, 77, 165);
+
+                font: {
+                    size: 2rem;
+                    weight: bold;
+                }
+            }
+
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid gray;
+                margin-bottom: 1.6rem;
+                outline: none;
+                // border: 1px solid red;
+            }
+
+            input::placeholder {
+                color: rgb(3, 3, 185);
+                margin: 5px 0;
+            }
+
+            .icon {
+                position: absolute;
+                color: rgb(64, 64, 179);
+                font-size: .8rem;
+                right: 2px;
+                
+            }
+
+            .inputIcon {
+                position: relative;
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .btn1 {
+                    color: #fff;
+                    background-color: $blue-color;
+
+                    &:hover {
+                        background-color: $blue-dark-color;
+                    }
+                }
+
+                .btn2 {
+                    color: $blue-color;
+                    border: 1px solid $blue-color;
+
+                    &:hover {
+                        background-color: rgb(197, 197, 197);
+                    }
+                }
+
+                button {
+                    cursor: pointer;
+                    border-radius: 15px;
+                    border: none;
+    
+                    padding: 6px 16px;
+                    margin-top: 1rem;
+
+                    font-weight: bold;
+                    font-size: .9rem;
+
+                    outline: none;
+                }
+
+                span a {
+                    text-decoration: none;
+                    font-size: .9rem;
+                }
+            }
+        }
+
+
+    }
+}

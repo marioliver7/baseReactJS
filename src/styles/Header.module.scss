@@ -1,0 +1,46 @@
+.HeaderContainer {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .logo {
+        color: rgb(117, 117, 238);
+
+        h2 {
+            margin-top: 0px;
+        }
+    }
+
+    .navBar ul {
+        margin-top: 0px;
+        // border: 1px solid red;
+        list-style-type: none;
+        display: flex;
+
+        li:not(:last-child) {
+            margin-right: 5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(180, 180, 180);
+            font-weight: bold;
+
+            &:hover {
+                color: rgb(80, 80, 80);
+            }
+        }
+
+        .button a {
+            background-color: #e94264;
+            padding: 6px 11px;
+            border-radius: 15px;
+            color: white;
+
+            &:hover {
+                background-color: #e4738a;
+            }
+        }
+    }
+}
